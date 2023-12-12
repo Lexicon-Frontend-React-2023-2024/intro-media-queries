@@ -1,0 +1,45 @@
+/* ALl styling that is NOT inside a media query can be regarded as default styling for our web page */
+
+body {
+  margin: 0;
+}
+
+nav {
+  align-items: center;
+  background-color: lightgray;
+  gap: 15px;
+  display: flex;
+  padding: 10px;
+}
+
+.logo {
+  font-size: 70px;
+}
+
+a {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  /* This styling will only apply as long as the screen is smaller than 800 px in width*/
+
+  nav {
+    background-color: aquamarine;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  /* This styling will only apply when the screen is smaller than 570px in width. BUT the styling from the media query above will still be in effect. */
+
+  nav {
+    flex-direction: column;
+  }
+
+  .logo {
+    font-size: 50px;
+  }
+
+  a {
+    font-size: 20px;
+  }
+}
